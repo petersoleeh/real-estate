@@ -2,5 +2,11 @@
 
 <p>Your to go to page when it comes to finding your ideal home.</p>
 
+<ul>
+  {{#each model as |estate|}}
+  <li>Find {{estate.bedroom}} bedroom {{estate.type}}'s in {{estate.area}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About Us{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}
