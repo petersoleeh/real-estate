@@ -23,11 +23,11 @@ var estates = [{
   area: "Runda",
   bedroom: 10,
   image: "/assets/images/Luxury-Villa.jpg"
-
-}]
+}];
 
 export default Ember.Route.extend({
   model() {
-    return estates;
-  }
+    return this.store.findAll('estate')
+
+  },
 });
