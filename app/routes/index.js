@@ -4,7 +4,7 @@ var estates = [{
   type: "Apartment",
   area: "Lavington",
   bedroom: 2,
-  image: "/assets/images/Apartments.jpg"
+  image: "/assets/images/Apartment.jpeg"
 }, {
   id: 2,
   type: "Town House",

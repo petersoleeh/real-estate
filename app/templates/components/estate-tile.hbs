@@ -1,0 +1,8 @@
+<li>
+  Find {{estate.bedroom}} bedroom {{estate.type}}'s in {{estate.area}}
+  {{#if isImageShowing}}
+  <p><img src={{estate.image}} alt={{estate.type}}></p>
+  {{else}}
+  <button {{action 'imageShow'}}>Estate</button>
+  {{/if}}
+ </li>

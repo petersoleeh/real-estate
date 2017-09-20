@@ -4,7 +4,7 @@
 
 <ul>
   {{#each model as |estate|}}
-  <li>Find {{estate.bedroom}} bedroom {{estate.type}}'s in {{estate.area}}</li>
+    {{estate-tile estate=estate}}
   {{/each}}
 </ul>
 
