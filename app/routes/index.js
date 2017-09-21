@@ -30,4 +30,16 @@ export default Ember.Route.extend({
     return this.store.findAll('estate')
 
   },
+  actions: {
+    saveEstate3(params) {
+      var newEstate = this.store.createRecord('estate', params);
+      newEstate.save();
+      this.transitionTo('index');
+    },
+
+    destroyEstate(estate) {
+      estate.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
 });

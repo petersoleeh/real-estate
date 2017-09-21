@@ -5,6 +5,14 @@ export default Ember.Component.extend({
   actions: {
     imageShow: function() {
       this.set('isImageShowing', true);
+    },
+    imageHide: function() {
+      this.set('isImageShowing', false);
+    },
+    delete(estate) {
+      if (confirm("You sure you want to delete this estate?")) {
+        this.sendAction('destroyEstate', estate);
+      }
     }
   }
 });

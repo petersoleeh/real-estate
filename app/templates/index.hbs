@@ -1,12 +1,14 @@
-<h1>Hi, Welcome to Real Estate</h1>
+<h3>Hi, Welcome to Real Estate</h3>
 
 <p>Your to go to page when it comes to finding your ideal home.</p>
 
 <ul>
   {{#each model as |estate|}}
-    {{estate-tile estate=estate}}
+    {{estate-tile estate=estate destroyEstate="destroyEstate"}}
   {{/each}}
 </ul>
+
+{{new-estate saveEstate2="saveEstate3"}}
 
 {{#link-to 'about'}}About Us{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}
